@@ -1,6 +1,6 @@
 'use strict';
 
-const chai = requre('chai');
+const chai = require('chai');
 const chaiHttp = require('chai-http');
 const faker = require ('faker');
 const mongoose = require('mongoose');
@@ -23,21 +23,16 @@ function seedBlogPostData() {
     return BlogPost.insertMany(seedData);
 }
 
-function generateHUH1() {
-
-}
-
-function generateHUH2() {
-
-}
-
+//  generate an object representing a blogpost
 function generateBlogPostData() {
     return {
-        author: this.authorName,
-        content: this.content,
-        title: this.title,
-        created: this.created
-    }
+        author: {
+            firstName: faker.name.firstName(),
+            lastName: faker.name.lastName()
+        },
+        content: faker.lorem.sentence(),
+        title: faker.lorem.text(),
+    };
 }
 
 function tearDownDb() {
