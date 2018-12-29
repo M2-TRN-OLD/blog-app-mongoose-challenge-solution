@@ -29,17 +29,17 @@ const blogpostSchema = mongoose.Schema({
 });
 
 blogpostSchema.pre('findOne', function(next) {
-    this.populate('author');
+    this.populate('authors');
     next();
 });
 
 blogpostSchema.pre('find', function(next) {
-    this.populate('author');
+    this.populate('authors');
     next();
 });
 
 blogpostSchema.virtual("authorName").get(function() {
-    return `${this.author.firstName} ${this.author.lastName}`.trim();
+    return `${this.authors.firstName} ${this.authors.lastName}`.trim();
 });
 
 blogpostSchema.methods.serialize = function() {

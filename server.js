@@ -16,10 +16,12 @@ app.use(express.json());
 
 // GET requests to /authors
 app.get('/authors', (req, res) => {
+  console.log('this is a test');
     Author
     .find()
     .then(authors => {
         res.json(authors.map(author => {
+          console.log(res);
             return {
                 id: author._id,
                 firstName:author.firstName,
