@@ -1,9 +1,3 @@
 language: node_js
 node_js: node
-deploy:
-  provider: heroku
-  api_key:
-    secure: gJrzb3jZRWTQgoI/sDDrFeGifJi+uPSfQnd/nPSexgtx5HzNgADTBRDNXzxex663T/ppxHC5Oj64rx1OdKH9/f0RfvPNA41G0ucS/Z6EzsSRBTNtCB358+1Wk/GazqXnBRFKA//B7zS2bRACz5AMQBYwZ5a+SW+5NV4VU0l+IbZnbw+gdlgCHMi1HvSLswySOBGQ5xQVgF4yPmkpEGV32GWU/muUidePeAV6fPtHTTYGDs27ZvsjHz4l647p23nCmp6XZ7jCgOf+aWkrFYkriuDeDc2I5xiW70DgfwChk3bS/vKtkRfIEB1yeJRT9jcjtEKE199Ujz6Xr8ZzxRBaP0Cfy2YvnsCmfAlLCguiC97sgXNi6J8aZSbL+i5RtkeO/IR64j4uPEITZun5XkdlLQBi7pZ2/v8UMfTiC1PE0fBUunZ7cEgaLavGM7o1wKHcaJgQBUEpKMr9eJnlzyXEoExns/o1vIgEpd5ObHosPN6RlvZW46L5uixYBHCCkbAkuNLecGwuXDBgjx5BkJBvMfH45VrsZ/sYgbph9ZTO/IeawmgSV7iXDT1gTaqJgTiWQNOvn+3JHtEIXUOuMr2TXA9G1S5cGAxfem+tyeNRLCCL9eyGoTi6kehJJAwe22itLOfgsioQuwB5uUu+pZU+ZTPjP1JNvLwq8MywsbnT8MU=
-  app: safe-scrubland-33000
-  on:
-    repo: MissyM2/blog-app-mongoose-challenge-solution
+
